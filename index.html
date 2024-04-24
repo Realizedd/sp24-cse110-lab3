@@ -4,16 +4,26 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Meeting Minutes</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Trirong"
+        />
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            html {
+                font-family: "Trirong", serif;
+            }
+        </style>
     </head>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact Information</a></li>
+        </ul>
+    </nav>
     <body>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact Information</a></li>
-            </ul>
-        </nav>
         <main>
             <header>
                 <div><h1>Meeting Minutes</h1></div>
@@ -33,12 +43,25 @@
                 <hr />
                 <h3>Attendance</h3>
                 <ul>
-                    <li><b>John</b> <span>Doe</span></li>
-                    <li><strong>Jane</strong> Doe</li>
-                    <li><i>John</i> Smith</li>
+                    <li><b>John</b> <span style="color: red">Doe</span></li>
                     <li>
-                        Jane <br />
-                        Smith
+                        <strong>Jane</strong>
+                        <span style="color: rgb(60, 67, 187)">Doe</span>
+                    </li>
+                    <li>
+                        <i>John</i>
+                        <span
+                            style="
+                                color: color-mix(in srgb, #34c9eb 50%, white);
+                            "
+                            >Smith</span
+                        >
+                    </li>
+                    <li>
+                        <span style="color: hsla(167, 33%, 39%, 0.805)"
+                            >Smith</span
+                        >
+                        <span style="color: #8e8e8e">Smith</span>
                     </li>
                 </ul>
                 <hr />
@@ -99,6 +122,16 @@
                     </select>
                 </fieldset>
             </form>
+            <div id="flex-container">
+                <div class="flex-children">1</div>
+                <div class="flex-children">2</div>
+                <div class="flex-children">3</div>
+            </div>
+            <div id="grid-container">
+                <div class="grid-children">1</div>
+                <div class="grid-children">2</div>
+                <div class="grid-children">3</div>
+            </div>
             <footer>
                 <p>&copy; 2024 Meeting Minutes</p>
             </footer>
