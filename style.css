@@ -1,0 +1,122 @@
+html {
+    --main-bg-color: lavenderblush;
+    background-color: var(--main-bg-color, lavenderblush);
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+button:active {
+    background-color: green;
+}
+
+body {
+    margin: 0pt; /* Remove default margin */
+}
+
+main {
+    padding: 10pt;
+}
+
+nav {
+    list-style-type: none;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: lavender;
+    display: block;
+    border-color: antiquewhite;
+    border-radius: 10px;
+    border-width: 10px;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav li a {
+    font-size: 0.5cm;
+}
+
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+}
+
+audio {
+    max-width: 100%;
+    min-width: 20%;
+    position: relative;
+}
+
+fieldset {
+    border-color: black;
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dashed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+video {
+    width: 50%;
+    height: auto;
+}
+
+#flex-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    background-color: #f1f1f1;
+}
+
+.flex-children {
+    background-color: blue;
+    margin: 10px;
+    flex: 1;
+}
+
+#grid-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+}
+
+.grid-children {
+    background-color: red;
+    margin: 10px;
+    grid-row: 1;
+}
