@@ -13,6 +13,27 @@ h2 {
 
 h3 {
     font-size: 1.5vw;
+    
+    & + p {
+        font-style: italic;
+    }
+    
+}
+
+h1, h2, h3 {
+    color: color(srgb 1 0 0);
+}
+
+#special-flex.flex-children {
+    background-color: yellow;
+}
+
+summary ~ ul {
+    list-style-type: georgian;
+}
+
+h3:has(+ ol) {
+    color: blue;
 }
 
 h1:hover {
@@ -88,6 +109,15 @@ fieldset {
     padding-right: 5px;
 }
 
+form * {
+    font-weight: bold;
+}
+
+fieldset > textarea {
+    width: 100%;
+    height: 50px;
+}
+
 video {
     width: 50%;
     height: auto;
@@ -119,4 +149,7 @@ video {
     background-color: red;
     margin: 10px;
     grid-row: 1;
+}
+input[type="date"] {
+    color: #0000ff;
 }
